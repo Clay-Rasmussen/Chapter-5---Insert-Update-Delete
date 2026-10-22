@@ -13,7 +13,6 @@
 - [Exercise 6 - Update Multiple Columns for a Single Record](#exercise-6---update-multiple-columns-for-a-single-record)
 - [Exercise 7 - Update Multiple Records (Rows)](#exercise-7---update-multiple-records-rows)
 - [Exercise 8 - Write Delete Statements](#exercise-8---write-delete-statements)
-- [Learning Outcomes](#learning-outcomes)
 - [Help](#help)
 - [Author](#author)
 
@@ -36,7 +35,9 @@ ___
 
 ### What This Exercise Was About
 
-This exercise focused on creating a complete backup of the `customer` table in the Sakila database. The process involved determining the number of records in the original table, creating a backup table named `customer_full_backup`, and verifying that the backup contained the same data as the original table.
+This exercise focused on creating a complete backup of the `customer` table in the Sakila database. The process involved determining the
+number of records in the original table, creating a backup table named `customer_full_backup`, and verifying that the backup contained the
+same data as the original table.
 
 ### New Concepts
 
@@ -56,7 +57,8 @@ This exercise focused on creating a complete backup of the `customer` table in t
 
 **What This Exercise Was About**
 
-The first part involved writing a query to determine how many records existed in the original `customer` table. This established a baseline that could be compared with the backup table in the following steps.
+The first part involved writing a query to determine how many records existed in the original `customer` table. This established a baseline
+that could be compared with the backup table in the following steps.
 
 **Screenshot of Output:**
 
@@ -66,7 +68,8 @@ The first part involved writing a query to determine how many records existed in
 
 **What This Exercise Was About**
 
-This part involved creating a complete backup of the `customer` table. The new table was named `customer_full_backup` and contained the records copied from the original table.
+This part involved creating a complete backup of the `customer` table. The new table was named `customer_full_backup` and contained the
+records copied from the original table.
 
 **Screenshot of Output:**
 
@@ -76,7 +79,8 @@ This part involved creating a complete backup of the `customer` table. The new t
 
 **What This Exercise Was About**
 
-After creating the backup, a query was written to count the records in `customer_full_backup`. The result was compared with the record count from the original `customer` table to confirm that the backup contained the expected number of rows.
+After creating the backup, a query was written to count the records in `customer_full_backup`. The result was compared with the record
+count from the original `customer` table to confirm that the backup contained the expected number of rows.
 
 **Screenshot of Output:**
 
@@ -86,7 +90,8 @@ After creating the backup, a query was written to count the records in `customer
 
 **What This Exercise Was About**
 
-The final part involved using MySQL's `CHECKSUM TABLE` statement to compare the original `customer` table with `customer_full_backup`. This provided an additional method of checking whether the tables contained matching data.
+The final part involved using MySQL's `CHECKSUM TABLE` statement to compare the original `customer` table with `customer_full_backup`. This
+provided an additional method of checking whether the tables contained matching data.
 
 **Screenshot of Output:**
 
@@ -98,7 +103,8 @@ The final part involved using MySQL's `CHECKSUM TABLE` statement to compare the 
 
 ### What This Exercise Was About
 
-This exercise focused on creating a partial backup of the `rental` table. Instead of copying every rental record, the goal was to identify rentals that had been returned and create a new table containing only those records.
+This exercise focused on creating a partial backup of the `rental` table. Instead of copying every rental record, the goal was to identify
+rentals that had been returned and create a new table containing only those records.
 
 The backup table was named `returned_rental`.
 
@@ -121,7 +127,8 @@ The backup table was named `returned_rental`.
 
 **What This Exercise Was About**
 
-This part involved counting the total number of records in the `rental` table. The result established the total number of rentals before separating returned rentals from rentals that had not been returned.
+This part involved counting the total number of records in the `rental` table. The result established the total number of rentals before
+separating returned rentals from rentals that had not been returned.
 
 **Screenshot of Output:**
 
@@ -131,7 +138,8 @@ This part involved counting the total number of records in the `rental` table. T
 
 **What This Exercise Was About**
 
-This part involved counting the rental records that had been returned. The `return_date` column was used to identify these records. Rentals with a recorded return date were counted as returned rentals.
+This part involved counting the rental records that had been returned. The `return_date` column was used to identify these records. Rentals
+with a recorded return date were counted as returned rentals.
 
 **Screenshot of Output:**
 
@@ -141,7 +149,8 @@ This part involved counting the rental records that had been returned. The `retu
 
 **What This Exercise Was About**
 
-This part involved counting rentals that had not been returned. Records with a `NULL` value in the `return_date` column were used to identify rentals without a recorded return date.
+This part involved counting rentals that had not been returned. Records with a `NULL` value in the `return_date` column were used to
+identify rentals without a recorded return date.
 
 **Screenshot of Output:**
 
@@ -151,7 +160,9 @@ This part involved counting rentals that had not been returned. Records with a `
 
 **What This Exercise Was About**
 
-The final part involved creating a backup table named `returned_rental`. The table contained only the rental records that had been returned. The number of records in the new table was then compared with the count of returned rentals from Exercise 2.1b to verify the result.
+The final part involved creating a backup table named `returned_rental`. The table contained only the rental records that had been
+returned. The number of records in the new table was then compared with the count of returned rentals from Exercise 2.1b to verify the
+result.
 
 **Screenshot of Output:**
 
@@ -163,7 +174,8 @@ The final part involved creating a backup table named `returned_rental`. The tab
 
 ### What This Exercise Was About
 
-This exercise focused on removing the backup tables created in the previous exercises. The `customer_full_backup` and `returned_rental` tables were deleted from the database using SQL statements.
+This exercise focused on removing the backup tables created in the previous exercises. The `customer_full_backup` and `returned_rental`
+tables were deleted from the database using SQL statements.
 
 After executing the statements, the database schema was refreshed to verify that both backup tables had been removed.
 
@@ -195,9 +207,11 @@ This part involved dropping the `customer_full_backup` and `returned_rental` tab
 
 ### What This Exercise Was About
 
-This exercise focused on inserting new records into the Sakila database without explicitly listing the column names in the `INSERT` statements.
+This exercise focused on inserting new records into the Sakila database without explicitly listing the column names in the `INSERT`
+statements.
 
-The process involved creating a new city, creating an address associated with that city, and then creating a customer associated with the new address. The records had to be inserted in the correct order because the tables are connected through foreign key relationships.
+The process involved creating a new city, creating an address associated with that city, and then creating a customer associated with the
+new address. The records had to be inserted in the correct order because the tables are connected through foreign key relationships.
 
 The assignment specified the following expected IDs:
 
@@ -225,19 +239,21 @@ The assignment specified the following expected IDs:
 
 **What This Exercise Was About**
 
-This part involved inserting a new city into the `city` table using country ID `103`, which represents the United States in the assignment. The new city was then retrieved with a `SELECT` query to verify that it was created successfully.
+This part involved inserting a new city into the `city` table using country ID `103`, which represents the United States in the assignment.
+The new city was then retrieved with a `SELECT` query to verify that it was created successfully.
 
 The expected city ID was `601`.
 
 **Screenshot of Output:**
 
-![Exercise 4.1 Output](assets/exercise4-1.png)
+<img src="assets/Ch5Query4.1Step1.png" alt="Exercise 3 Output" width="500">
 
 ### Exercise 4.2 - Insert a New Address
 
 **What This Exercise Was About**
 
-This part involved inserting a new address into the `address` table using city ID `601`. The address was associated with the city created in the previous step.
+This part involved inserting a new address into the `address` table using city ID `601`. The address was associated with the city created
+in the previous step.
 
 A query filtering by city ID `601` was used to verify that the address had been created successfully.
 
@@ -245,19 +261,20 @@ The expected address ID was `606`.
 
 **Screenshot of Output:**
 
-![Exercise 4.2 Output](assets/exercise4-2.png)
+<img src="assets/Ch5Query4.1Step2.png" alt="Exercise 3 Output" width="500">
 
 ### Exercise 4.3 - Insert a New Customer
 
 **What This Exercise Was About**
 
-This part involved inserting a new customer into the `customer` table using address ID `606` and store ID `1`. The new customer record was then retrieved by filtering on the address ID to verify that the insertion was successful.
+This part involved inserting a new customer into the `customer` table using address ID `606` and store ID `1`. The new customer record was
+then retrieved by filtering on the address ID to verify that the insertion was successful.
 
 The expected customer ID was `600`.
 
 **Screenshot of Output:**
 
-![Exercise 4.3 Output](assets/exercise4-3.png)
+<img src="assets/Ch5Query4.1Step3.png" alt="Exercise 3 Output" width="500">
 
 ---
 
@@ -267,7 +284,8 @@ The expected customer ID was `600`.
 
 This exercise focused on inserting a second customer using an explicit column list in the `INSERT` statement.
 
-The new customer used the same address ID (`606`) and last name as the customer created in Exercise 4. The assignment required omitting columns that were auto-incrementing, had default values, or allowed `NULL`.
+The new customer used the same address ID (`606`) and last name as the customer created in Exercise 4. The assignment required omitting
+columns that were auto-incrementing, had default values, or allowed `NULL`.
 
 ### New Concepts
 
@@ -288,23 +306,21 @@ The new customer used the same address ID (`606`) and last name as the customer 
 
 **What This Exercise Was About**
 
-This part involved inserting another customer using the same address ID and last name as the first customer. An explicit column list was used, and unnecessary columns were omitted according to the assignment instructions.
+This part involved inserting another customer using the same address ID and last name as the first customer. An explicit column list was
+used, and unnecessary columns were omitted according to the assignment instructions.
 
 The expected customer ID was `601`.
-
-**Screenshot of Output:**
-
-![Exercise 5.1 Output](assets/exercise5-1.png)
 
 ### Exercise 5.2 - Verify the Second Customer
 
 **What This Exercise Was About**
 
-This part involved writing a `SELECT` query that filtered on address ID `606`. The results were used to verify that both customer records associated with the address existed.
+This part involved writing a `SELECT` query that filtered on address ID `606`. The results were used to verify that both customer records
+associated with the address existed.
 
 **Screenshot of Output:**
 
-![Exercise 5.2 Output](assets/exercise5-2.png)
+<img src="assets/Ch5Query5.png" alt="Exercise 5 Output" width="500">
 
 ---
 
@@ -314,7 +330,8 @@ This part involved writing a `SELECT` query that filtered on address ID `606`. T
 
 This exercise focused on modifying existing customer records using the `UPDATE` statement.
 
-The first and second customer records were updated individually. For each customer, the store ID was changed to `2`, and the email address was updated. The customer IDs were used in the `WHERE` clauses to ensure that each statement targeted the intended record.
+The first and second customer records were updated individually. For each customer, the store ID was changed to `2`, and the email address
+was updated. The customer IDs were used in the `WHERE` clauses to ensure that each statement targeted the intended record.
 
 ### New Concepts
 
@@ -335,31 +352,26 @@ The first and second customer records were updated individually. For each custom
 
 **What This Exercise Was About**
 
-This part involved updating the first customer, identified by customer ID `600`. The customer's store ID was changed to `2`, and the email address was updated.
-
-**Screenshot of Output:**
-
-![Exercise 6.1 Output](assets/exercise6-1.png)
+This part involved updating the first customer, identified by customer ID `600`. The customer's store ID was changed to `2`, and the email
+address was updated.
 
 ### Exercise 6.2 - Update the Second Customer
 
 **What This Exercise Was About**
 
-This part involved updating the second customer, identified by customer ID `601`. The customer's store ID was changed to `2`, and the email address was updated.
-
-**Screenshot of Output:**
-
-![Exercise 6.2 Output](assets/exercise6-2.png)
+This part involved updating the second customer, identified by customer ID `601`. The customer's store ID was changed to `2`, and the email
+address was updated.
 
 ### Exercise 6.3 - Verify Both Customer Records
 
 **What This Exercise Was About**
 
-This part involved retrieving both customer records by filtering on address ID `606`. The results were used to confirm that the store IDs and email addresses had been updated correctly.
+This part involved retrieving both customer records by filtering on address ID `606`. The results were used to confirm that the store IDs
+and email addresses had been updated correctly.
 
 **Screenshot of Output:**
 
-![Exercise 6.3 Output](assets/exercise6-3.png)
+<img src="assets/Ch5Query6.png" alt="Exercise 6 Output" width="500">
 
 ---
 
@@ -369,7 +381,8 @@ This part involved retrieving both customer records by filtering on address ID `
 
 This exercise focused on updating multiple customer records with a single `UPDATE` statement.
 
-Both customers created earlier were associated with address ID `606`. The goal was to change the address ID for both records to `605` using a `WHERE` clause that selected records with the original address ID.
+Both customers created earlier were associated with address ID `606`. The goal was to change the address ID for both records to `605` using
+a `WHERE` clause that selected records with the original address ID.
 
 A verification query was then used to confirm that both records had been updated.
 
@@ -391,21 +404,19 @@ A verification query was then used to confirm that both records had been updated
 
 **What This Exercise Was About**
 
-This part involved changing the address ID from `606` to `605` for both newly created customer records. The statement filtered on address ID `606` so that both matching customers would be updated.
-
-**Screenshot of Output:**
-
-![Exercise 7.1 Output](assets/exercise7-1.png)
+This part involved changing the address ID from `606` to `605` for both newly created customer records. The statement filtered on address
+ID `606` so that both matching customers would be updated.
 
 ### Exercise 7.2 - Verify the Updated Records
 
 **What This Exercise Was About**
 
-This part involved querying the customer table using address ID `605`. The results were used to verify that both customer records had been updated successfully.
+This part involved querying the customer table using address ID `605`. The results were used to verify that both customer records had been
+updated successfully.
 
 **Screenshot of Output:**
 
-![Exercise 7.2 Output](assets/exercise7-2.png)
+<img src="assets/Ch5Query7.png" alt="Exercise 7 Output" width="500">
 
 ---
 
@@ -413,7 +424,8 @@ This part involved querying the customer table using address ID `605`. The resul
 
 ### What This Exercise Was About
 
-This exercise focused on deleting the records created during the earlier exercises. The city, address, and customer records were targeted using their respective IDs.
+This exercise focused on deleting the records created during the earlier exercises. The city, address, and customer records were targeted
+using their respective IDs.
 
 The exercise also involved verifying that the records had been deleted and documenting any issues encountered during the process.
 
@@ -442,19 +454,11 @@ Because the tables are related through foreign keys, deletion order and referent
 
 This part involved writing a `DELETE` statement to remove the city record identified by city ID `601`.
 
-**Screenshot of Output:**
-
-![Exercise 8.1a Output](assets/exercise8-1a.png)
-
 ### Exercise 8.1b - Delete the New Address
 
 **What This Exercise Was About**
 
 This part involved writing a `DELETE` statement to remove the address record identified by address ID `606`.
-
-**Screenshot of Output:**
-
-![Exercise 8.1b Output](assets/exercise8-1b.png)
 
 ### Exercise 8.1c - Delete the New Customers
 
@@ -462,19 +466,12 @@ This part involved writing a `DELETE` statement to remove the address record ide
 
 This part involved deleting the two customer records created earlier, identified by customer IDs `600` and `601`.
 
-**Screenshot of Output:**
-
-![Exercise 8.1c Output](assets/exercise8-1c.png)
-
 ### Exercise 8.2 - Verify Deleted Records
 
 **What This Exercise Was About**
 
-This part involved writing queries to verify that the specified city, address, and customer records had been deleted. The results were used to confirm whether the records still existed in their respective tables.
-
-**Screenshot of Output:**
-
-![Exercise 8.2 Output](assets/exercise8-2.png)
+This part involved writing queries to verify that the specified city, address, and customer records had been deleted. The results were used
+to confirm whether the records still existed in their respective tables.
 
 ### Exercise 8.3 - Document Results and Resolve Issues
 
@@ -482,41 +479,14 @@ This part involved writing queries to verify that the specified city, address, a
 
 The final part involved documenting the results of the deletion statements and describing any issues encountered.
 
-One possible issue is a foreign key constraint preventing a record from being deleted while another record still references it. If an error occurs, the related records and their dependencies must be examined to determine the appropriate deletion order.
+One possible issue is a foreign key constraint preventing a record from being deleted while another record still references it. If an error
+occurs, the related records and their dependencies must be examined to determine the appropriate deletion order.
 
 The actual error encountered and the solution used should be documented based on the results of the SQL statements.
-
-**Screenshot of Output:**
-
-![Exercise 8.3 Output](assets/exercise8-3.png)
 
 **Results and Resolution:**
 
 Document the error encountered, the reason for the error, the steps taken to resolve it, and the final verification results here.
-
-
-## Learning Outcomes
-___
-
-After completing this chapter, I developed a better understanding of how SQL can be used to manage data in a relational database.
-
-The main learning outcomes included:
-
-- Creating full and partial table backups.
-- Verifying backup data by comparing row counts and table checksums.
-- Creating and removing tables.
-- Inserting records with and without explicit column lists.
-- Using default values, `NULL`, and auto-incrementing columns appropriately.
-- Understanding relationships between tables through primary and foreign keys.
-- Updating one record or multiple records using the `UPDATE` statement.
-- Deleting specific records using the `DELETE` statement.
-- Using `WHERE` clauses to control which records are affected by SQL statements.
-- Verifying database changes using `SELECT` queries.
-- Recognizing and troubleshooting issues related to foreign key constraints.
-- Documenting SQL queries and their results in a GitHub repository.
-
-Overall, this assignment provided practical experience with the SQL statements used to create, insert, update, and delete data in MySQL.
-
 
 ## Help
 ___
