@@ -97,6 +97,8 @@ provided an additional method of checking whether the tables contained matching 
 
 <img src="assets/Ch5Query1.4.png" alt="Exercise 1.4 Output" width="500">
 
+[Back to the top](#table-of-contents)
+
 ---
 
 ## Exercise 2 - Partial Table Backup
@@ -168,6 +170,8 @@ result.
 
 <img src="assets/Ch5Query2.2.png" alt="Exercise 2.2 Output" width="500">
 
+[Back to the top](#table-of-contents)
+
 ---
 
 ## Exercise 3 - Drop Tables
@@ -200,6 +204,8 @@ This part involved dropping the `customer_full_backup` and `returned_rental` tab
 **Screenshot of Output:**
 
 <img src="assets/Ch5Query3.png" alt="Exercise 3 Output" width="500">
+
+[Back to the top](#table-of-contents)
 
 ---
 
@@ -276,6 +282,8 @@ The expected customer ID was `600`.
 
 <img src="assets/Ch5Query4.1Step3.png" alt="Exercise 3 Output" width="500">
 
+[Back to the top](#table-of-contents)
+
 ---
 
 ## Exercise 5 - Insert Statement Using a Column List
@@ -321,6 +329,8 @@ associated with the address existed.
 **Screenshot of Output:**
 
 <img src="assets/Ch5Query5.png" alt="Exercise 5 Output" width="500">
+
+[Back to the top](#table-of-contents)
 
 ---
 
@@ -373,6 +383,8 @@ and email addresses had been updated correctly.
 
 <img src="assets/Ch5Query6.png" alt="Exercise 6 Output" width="500">
 
+[Back to the top](#table-of-contents)
+
 ---
 
 ## Exercise 7 - Update Multiple Records (Rows)
@@ -417,6 +429,8 @@ updated successfully.
 **Screenshot of Output:**
 
 <img src="assets/Ch5Query7.png" alt="Exercise 7 Output" width="500">
+
+[Back to the top](#table-of-contents)
 
 ---
 
