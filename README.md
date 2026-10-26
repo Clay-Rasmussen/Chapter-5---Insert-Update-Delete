@@ -3,18 +3,18 @@
 
 ## Table of Contents
 
-- [Tech Stack](#tech-stack)
-- [Installation](#installation)
-- [Exercise 1 - Full Table Backup](#exercise-1---full-table-backup)
-- [Exercise 2 - Partial Table Backup](#exercise-2---partial-table-backup)
-- [Exercise 3 - Drop Tables](#exercise-3---drop-tables)
-- [Exercise 4 - Insert Statement Without a Column List](#exercise-4---insert-statement-without-a-column-list)
-- [Exercise 5 - Insert Statement Using a Column List](#exercise-5---insert-statement-using-a-column-list)
-- [Exercise 6 - Update Multiple Columns for a Single Record](#exercise-6---update-multiple-columns-for-a-single-record)
-- [Exercise 7 - Update Multiple Records (Rows)](#exercise-7---update-multiple-records-rows)
-- [Exercise 8 - Write Delete Statements](#exercise-8---write-delete-statements)
-- [Help](#help)
-- [Author](#author)
+  - [Tech Stack](#tech-stack)
+  - [Installation](#installation)
+  - [Exercise 1 - Full Table Backup](#exercise-1---full-table-backup)
+  - [Exercise 2 - Partial Table Backup](#exercise-2---partial-table-backup)
+  - [Exercise 3 - Drop Tables](#exercise-3---drop-tables)
+  - [Exercise 4 - Insert Statement Without a Column List](#exercise-4---insert-statement-without-a-column-list)
+  - [Exercise 5 - Insert Statement Using a Column List](#exercise-5---insert-statement-using-a-column-list)
+  - [Exercise 6 - Update Multiple Columns for a Single Record](#exercise-6---update-multiple-columns-for-a-single-record)
+  - [Exercise 7 - Update Multiple Records (Rows)](#exercise-7---update-multiple-records-rows)
+  - [Exercise 8 - Write Delete Statements](#exercise-8---write-delete-statements)
+  - [Help](#help)
+  - [Author](#author)
 
 ## Tech Stack
 ___
