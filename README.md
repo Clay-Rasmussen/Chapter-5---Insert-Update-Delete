@@ -1,5 +1,4 @@
 # Chapter 5 - Insert, Update, and Delete
----
 
 ## Table of Contents
 
@@ -17,13 +16,13 @@
   - [Author](#author)
 
 ## Tech Stack
-___
+
 ![GitHub](https://img.shields.io/badge/GitHub-000000.svg?style=for-the-badge&logo=GitHub)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 **Sakila Database**
 
 ## Installation
-___
+
 1. Clone the repository to your local machine. (Or just steal my code.)
 2. Install MySQL if it is not already installed.
 3. Download and install the Sakila sample database.
