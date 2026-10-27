@@ -270,7 +270,7 @@ The expected address ID was `606`.
 
 **Screenshot of Output:**
 
-<img src="assets/Ch5Query4.1Step2.png" alt="Exercise 3 Output" width="500">
+<img src="assets/Ch5Query4Step2.png" alt="Exercise 3 Output" width="500">
 
 ### Exercise 4.3 - Insert a New Customer
 
@@ -283,7 +283,7 @@ The expected customer ID was `600`.
 
 **Screenshot of Output:**
 
-<img src="assets/Ch5Query4.1Step3.png" alt="Exercise 3 Output" width="500">
+<img src="assets/Ch5Query4Step3.png" alt="Exercise 3 Output" width="500">
 
 [Back to the top](#table-of-contents)
 
