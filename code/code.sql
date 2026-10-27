@@ -22,6 +22,12 @@ CREATE TABLE customer_full_backup AS
 	SELECT * FROM customer;
 
 -- Part 1.3
+SELECT 
+    (SELECT COUNT(*) FROM customer) AS customer,
+    (SELECT COUNT(*) FROM customer_full_backup) AS cbackup;
+
+
+-- Part 1.4
 CHECKSUM TABLE customer, customer_full_backup;
 
 /*
