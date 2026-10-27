@@ -21,6 +21,8 @@
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 **Sakila Database**
 
+[Back to the top](#table-of-contents)
+
 ## Installation
 
 1. Clone the repository to your local machine. (Or just steal my code.)
@@ -29,6 +31,8 @@
 4. Open the project in VS Code or your preferred SQL editor.
 5. Select the Sakila database before running the queries.
 6. Run each query individually to verify the results.
+
+[Back to the top](#table-of-contents)
 
 ## Exercise 1 - Full Table Backup
 
@@ -501,6 +505,8 @@ The actual error encountered and the solution used should be documented based on
 
 Document the error encountered, the reason for the error, the steps taken to resolve it, and the final verification results here.
 
+[Back to the top](#table-of-contents)
+
 ## Help
 ___
 If you encounter issues while completing the exercises, try the following troubleshooting steps:
@@ -515,6 +521,8 @@ If you encounter issues while completing the exercises, try the following troubl
 - Refresh the schema window after creating or dropping tables.
 - Restart your SQL editor if it stops responding.
 - If necessary, re-clone the repository and confirm that all required files are present.
+
+[Back to the top](#table-of-contents)
 
 ## Author
 ___
